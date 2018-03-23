@@ -1,5 +1,6 @@
 package terranceyoung.plugin.terrystoolbox.data;
 
+import org.bukkit.plugin.java.JavaPlugin;
 import terranceyoung.plugin.terrystoolbox.TerrysToolbox;
 import terranceyoung.plugin.terrystoolbox.data.json.*;
 
@@ -18,8 +19,8 @@ public abstract class Data {
 
     private File dataFile;
 
-    public Data(String name, String ext) {
-        dataFile = new File(TerrysToolbox.instance.getDataFolder(), name + ext);
+    public Data(JavaPlugin plugin, String name, String ext) {
+        dataFile = new File(plugin.getDataFolder(), name + ext);
         fileExists(dataFile);
 
         try {
@@ -32,8 +33,12 @@ public abstract class Data {
         save();
     }
 
+    public Data(JavaPlugin plugin, String name) {
+        this(plugin, name, ".json");
+    }
+
     public Data(String name) {
-        this(name, ".json");
+        this(TerrysToolbox.instance, name);
     }
 
     public JSONObject getData() {

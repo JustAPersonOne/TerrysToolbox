@@ -8,8 +8,6 @@
     <artifactId>TerrysToolbox</artifactId>
     <version>1.1.0</version>
 
-
-
     <repositories>
         <repository>
             <id>spigot-repo</id>
