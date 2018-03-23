@@ -1,0 +1,53 @@
+name: TerrysToolbox
+main: terranceyoung.plugin.terrystoolbox.TerrysToolbox
+version: 1.1.0
+
+author: TerranceYoung
+
+commands:
+  tyatbac:
+    description: Terrance Young's Amazing Toolbox Access Command (tyatbac)
+    usage: /tyatbac <...>
+    permission: terrystoolbox.use
+    permission-message: Sorry, you don't have permission to use Terrance Young's Toolbox!
+  tyschem:
+    description: Terrance Young's Schematic Command. Creates and does stuff with schematics for building.
+    usage: /tyschem <...>
+    permission: terrystoolbox.schematics.use
+    permission-message: Sorry, you don't have permission to use Terry's Schematics!
+
+permissions:
+  terrystoolbox.*:
+    description: Terry's Toolbox access command
+    children:
+      terrystoolbox.use: true
+      terrystoolbox.help: true
+      terrystoolbox.version: true
+      terrystoolbox.update: true
+      terrystoolbox.save: true
+      terrystoolbox.convert: true
+      terrystoolbox.schematics.*: true
+  terrystoolbox.use:
+    description: The ability to use Terrance Young's toolbox
+    default: op
+  terrystoolbox.help:
+    description: The ability to see the help page in Terrance Young's toolbox
+  terrystoolbox.version:
+    description: The ability to see the version of Terrance Young's toolbox
+    default: op
+  terrystoolbox.update:
+    description: The ability to update the player/UUID list
+    default: op
+  terrystoolbox.save:
+    description: The ability to save the all Terry's Toolbox related data (but not any dependent plugins!)
+    default: op
+  terrystoolbox.convert:
+    description: The ability to test the conversion system for chat colours.
+    default: op
+  terrystoolbox.schematics.*:
+    description: The ability to use all Terry's Schematics commands
+    children:
+      terrystoolbox.schematics.use: true
+  terrystoolbox.schematics.use:
+    description: The ability to use Terry's Schematics base command.
+    default: op
