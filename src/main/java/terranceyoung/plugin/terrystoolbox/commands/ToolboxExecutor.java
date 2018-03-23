@@ -63,7 +63,7 @@ public class ToolboxExecutor implements CommandExecutor {
             sender.sendMessage(ChatColor.DARK_RED + "Sorry! " + ChatColor.RED + "You don't have permission to use that command!");
         }
         else {
-            sender.sendMessage(ChatColor.GOLD + "Terrance Young's Toolbox" + ChatColor.YELLOW + " - Version 1.1.0");
+            sender.sendMessage(ChatColor.GOLD + "Terrance Young's Toolbox" + ChatColor.YELLOW + " - Version 1.1.1");
         }
     }
 
