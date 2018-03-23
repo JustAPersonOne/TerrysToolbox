@@ -33,6 +33,10 @@ public abstract class Data {
         save();
     }
 
+    public Data(String name, String ext) {
+        this(TerrysToolbox.instance, name, ext);
+    }
+
     public Data(JavaPlugin plugin, String name) {
         this(plugin, name, ".json");
     }

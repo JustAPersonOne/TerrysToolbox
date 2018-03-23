@@ -9,6 +9,5 @@ public class Schematic extends Data {
 
     public Schematic(String name) {
         super(name, ".tyschem");
-
     }
 }
