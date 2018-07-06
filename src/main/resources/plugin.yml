@@ -15,6 +15,9 @@ commands:
     usage: /tyschem <...>
     permission: terrystoolbox.schematics.use
     permission-message: Sorry, you don't have permission to use Terry's Schematics!
+  tpworld:
+    description: change worlds
+    usage: /tpworld <world>
 
 permissions:
   terrystoolbox.*:
