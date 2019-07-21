@@ -6,7 +6,7 @@ import org.bukkit.event.player.PlayerJoinEvent;
 import terranceyoung.plugin.terrystoolbox.TerrysToolbox;
 
 public class onPlayerJoinListener implements Listener {
-    @SuppressWarnings("unused")
+
     @EventHandler
     public void onPlayerJoin(PlayerJoinEvent event) {
         if(!TerrysToolbox.playerData.isPlayerOnDatabase(event.getPlayer().getName())) {

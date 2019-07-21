@@ -5,7 +5,6 @@ import org.bukkit.entity.Player;
 
 import java.util.UUID;
 
-@SuppressWarnings("unused")
 public class DataPlayers extends Data {
     public DataPlayers() {
         super("players");
@@ -18,6 +17,7 @@ public class DataPlayers extends Data {
     public boolean addPlayer(Player player) {
         if (!isPlayerOnDatabase(player.getName())) {
             getData().put(player.getName(), player.getUniqueId());
+            save();
             return true;
         } else {
             return false;

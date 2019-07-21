@@ -67,3 +67,7 @@ buildNumber.properties
 !.vs/tasks.json
 !.vs/launch.json
 !.vs/extensions.json
+
+.vscode/*
+
+.settings/*

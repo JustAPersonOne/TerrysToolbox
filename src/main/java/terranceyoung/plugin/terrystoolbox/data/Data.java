@@ -64,7 +64,8 @@ public abstract class Data {
 
     public boolean load() {
         try {
-            Scanner sc = new Scanner(dataFile).useDelimiter("\\Z");
+            Scanner sc = new Scanner(dataFile);
+            sc.useDelimiter("\\Z");
             data = new JSONObject(sc.next());
             sc.close();
             return true;

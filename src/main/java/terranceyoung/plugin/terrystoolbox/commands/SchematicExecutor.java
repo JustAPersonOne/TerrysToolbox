@@ -6,6 +6,7 @@ import org.bukkit.command.CommandSender;
 
 public class SchematicExecutor implements CommandExecutor {
     public boolean onCommand(CommandSender commandSender, Command command, String s, String[] args) {
+        commandSender.sendMessage("TYSchem Coming Soon");
         return true;
     }
 }

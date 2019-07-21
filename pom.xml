@@ -6,7 +6,7 @@
 
     <groupId>terranceyoung.plugin</groupId>
     <artifactId>TerrysToolbox</artifactId>
-    <version>1.1.1</version>
+    <version>1.2.0</version>
 
     <repositories>
         <repository>
@@ -20,13 +20,10 @@
             <groupId>org.spigotmc</groupId>
             <artifactId>spigot-api</artifactId>
             <scope>provided</scope>
-            <version>1.12.2-R0.1-SNAPSHOT</version>
+            <version>1.14.4-R0.1-SNAPSHOT</version>
         </dependency>
     </dependencies>
 
     <packaging>jar</packaging>
-    <build>
-        <finalName>TerrysToolbox</finalName>
-    </build>
 
 </project>

@@ -33,7 +33,7 @@ import java.util.Iterator;
  * @author JSON.org
  * @version 2016-08-10
  */
-@SuppressWarnings("boxing")
+
 public class XML {
 
     /**
@@ -317,7 +317,6 @@ public class XML {
      * @return JSON value of this string or the string
      * @deprecated Use JSONObject#stringToValue(String) instead.
      */
-    @SuppressWarnings("JavadocReference")
     @Deprecated
     public static Object stringToValue(String string) {
         return terranceyoung.plugin.terrystoolbox.data.json.JSONObject.stringToValue(string);
